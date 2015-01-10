@@ -5,6 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Google</title>
+	<script type="text/javascript">
+		main = function () {
+			document.searching.searchform.focus();
+		};
+		window.onload = main;
+	</script>
 </head>
 <body>
 <div id="container">	
@@ -26,8 +32,8 @@
 		</div>
 
 		<div id="search">
-		<form>
-			<input type="text" name="search-form" />
+		<form name="searching">
+			<input type="text" name="searchform" />
 			<input type="submit" name="search" value="Cerca con Google" />
 			<input type="submit" name="lucky" value="Mi sento fortunato" />
 		</form>
